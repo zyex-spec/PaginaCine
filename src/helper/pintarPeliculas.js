@@ -12,6 +12,8 @@ export function pintarPeliculas(peliculas){
         console.log(pelicula.sinopsis)
         console.log(pelicula.clasificacion)
         console.log(pelicula.idioma)
+        console.log(pelicula.director)
+        console.log(pelicula.actores)
     
         let columna=document.createElement("div")
         columna.classList.add("col")
@@ -69,6 +71,8 @@ export function pintarPeliculasEstreno(peliculas){
         console.log(pelicula.sinopsis)
         console.log(pelicula.clasificacion)
         console.log(pelicula.idioma)
+        console.log(pelicula.director)
+        console.log(pelicula.actores)
     
         let columna=document.createElement("div")
         columna.classList.add("col")
