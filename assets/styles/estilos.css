@@ -1,0 +1,19 @@
+.banner{
+
+    background-image: url('../img/banner.jpg');
+    background-position: top center;
+    background-size: cover;
+    padding: 20% 50% 30% 2%;
+
+}
+#cartelera{
+    background-color: black;
+    background-size: cover;
+    background-position: top center;
+}
+
+#redes{
+    background-color: black;
+    background-size: cover;
+    background-position: top center;
+}
