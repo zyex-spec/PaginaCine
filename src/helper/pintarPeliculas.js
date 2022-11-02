@@ -41,11 +41,21 @@ export function pintarPeliculas(peliculas){
         sinopsis.classList.add("d-none")
         sinopsis.textContent=pelicula.sinopsis
 
+        let director=document.createElement("p")
+        director.classList.add("text-muted")
+        director.textContent=pelicula.director
+
+        let actores=document.createElement("p")
+        actores.classList.add("actores")
+        actores.textContent=pelicula.actores
+
         tarjeta.appendChild(poster)
         tarjeta.appendChild(nombre)
         tarjeta.appendChild(genero)
         tarjeta.appendChild(idioma)
         tarjeta.appendChild(sinopsis)
+        tarjeta.appendChild(director)
+        tarjeta.appendChild(actores)
     
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
@@ -100,11 +110,21 @@ export function pintarPeliculasEstreno(peliculas){
         sinopsis.classList.add("d-none")
         sinopsis.textContent=pelicula.sinopsis
 
+        let director=document.createElement("p")
+        director.classList.add("text-muted")
+        director.textContent=pelicula.director
+
+        let actores=document.createElement("p")
+        actores.classList.add("actores")
+        actores.textContent=pelicula.actores
+
         tarjeta.appendChild(poster)
         tarjeta.appendChild(nombre)
         tarjeta.appendChild(genero)
         tarjeta.appendChild(idioma)
         tarjeta.appendChild(sinopsis)
+        tarjeta.appendChild(director)
+        tarjeta.appendChild(actores)
     
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
