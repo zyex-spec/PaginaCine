@@ -1,11 +1,19 @@
 import {pintarSillas} from "../helper/pintarSillas.js"
 
+let asientos
 
-let asientos = [
-    [{id:"a1",estado:2},{id:"b1",estado:2},{id:"c1",estado:0},{id:"d1",estado:0}],
-    [{id:"a2",estado:0},{id:"b2",estado:0},{id:"c2",estado:0},{id:"d2",estado:0}],
-    [{id:"a3",estado:0},{id:"b3",estado:0},{id:"c3",estado:0},{id:"d3",estado:0}]
-]
+if (localStorage.getItem("asientosReservados") === null) 
+{ 
+     asientos = [
+        [{id:"a1",estado:2},{id:"b1",estado:2},{id:"c1",estado:0},{id:"d1",estado:0}],
+        [{id:"a2",estado:0},{id:"b2",estado:0},{id:"c2",estado:0},{id:"d2",estado:0}],
+        [{id:"a3",estado:0},{id:"b3",estado:0},{id:"c3",estado:0},{id:"d3",estado:0}]
+    ]
+}
+else
+{
+   asientos = JSON.parse(localStorage.getItem("asientosReservados"))
+}
 
 let cinema = document.getElementById("salacinema")
 let reserva = document.getElementById("reservar")
