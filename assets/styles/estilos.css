@@ -12,8 +12,14 @@
     background-position: top center;
 }
 
-#redes{
+.cuerpo{
     background-color: black;
+    background-size: cover;
+    background-position: top center;
+}
+
+.cuerpocine{
+    background-color:darkgrey;
     background-size: cover;
     background-position: top center;
 }
